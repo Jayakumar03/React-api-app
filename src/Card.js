@@ -8,9 +8,11 @@ const Card1 = (details) => {
     return(
         <Card>
             <CardBody className="text-center">
+
                 <img height="150" width="150"
                 className="rounded-circle img-thumnnail border-danger" 
                 src= {details.picture?.large} />
+
                 <CardTitle className="text-primary">
                     <h1>
                         <span className="pr-2">
@@ -25,9 +27,9 @@ const Card1 = (details) => {
                     </h1>
                 </CardTitle>
                 <CardText>
-                    <DefaultContext />
+                    {/* <DefaultContext /> */}
                     {details.location?.city}
-                    <P>{details.phone}</P>  
+                    <p>{details.phone}</p>  
                 </CardText>
             </CardBody>
         </Card>
